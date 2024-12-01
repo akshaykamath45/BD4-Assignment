@@ -1,11 +1,7 @@
 {
   "version": 2,
-  "functions": {
-    "api/index.js": {
-      "includeFiles": "api/database.sqlite"
-    }
-  },
   "routes": [
     { "src": "/(.*)", "dest": "api/index.js" }
   ]
 }
+
