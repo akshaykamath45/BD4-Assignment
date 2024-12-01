@@ -7,17 +7,19 @@ const { open } = require('sqlite');
 const app = express();
 const port = 3000;
 
+app.use(cors());
+app.use(express.json());
+
 let db;
 (async () => {
   db = await open({
-    filename: resolve(__dirname, 'database.sqlite'),
+    filename: resolve(__dirname, './database.sqlite'),
     driver: sqlite3.Database,
   });
   console.log('Database connected successfully!');
 })();
 
-app.use(cors());
-app.use(express.json());
+
 
 app.get('/', (req, res) => {
   res.send('Welcome to FoodieFinds');
