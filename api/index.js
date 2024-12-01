@@ -13,7 +13,7 @@ app.use(express.json());
 let db;
 (async () => {
   db = await open({
-    filename: resolve(__dirname, './database.sqlite'),
+    filename:"./database.sqlite'",
     driver: sqlite3.Database,
   });
   console.log('Database connected successfully!');
