@@ -1,0 +1,15 @@
+{
+  "name": "foodie-finds",
+  "version": "1.0.0",
+  "description": "FoodieFinds API with SQLite and Express",
+  "main": "index.js",
+  "scripts": {
+    "start": "node api/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.7",
+    "sqlite": "^5.1.1"
+  }
+}
